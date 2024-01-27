@@ -1,0 +1,26 @@
+.card{
+    background-color: rgb(192 192 192 / 46%);
+    border-radius: 10px;
+    border: 1px solid rgb(20, 144, 207);
+}
+img{
+    border: 1px solid rgb(20, 144, 207);
+    border-radius: 50%;
+    height: 150px;
+    width: 150px; 
+    margin:auto;
+    margin-top: 10px ;
+}
+h5{
+    font-size: 1.8rem;
+    color: black;
+}
+h5:first-of-type{
+    display: inline-block;
+    margin-right: 50px;
+}
+i{
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(30, 231, 30);
+}

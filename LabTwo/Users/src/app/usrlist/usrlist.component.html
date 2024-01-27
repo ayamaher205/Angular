@@ -1,0 +1,12 @@
+<h1>Users</h1>
+<div class="search">
+    <input type="text" placeholder="search by email">
+    <button type="search">Search</button>
+</div>
+<div class="row row-cols-1 row-cols-md-2 g-4">
+    @for(usr of userlist ; track usr.id){
+            <div class="col">
+               <app-usrcard [member]="usr"></app-usrcard>
+            </div>
+        }
+</div>

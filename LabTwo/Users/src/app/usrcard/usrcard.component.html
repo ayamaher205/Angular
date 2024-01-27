@@ -1,0 +1,9 @@
+      <div class="card h-100 text-center">
+        <img [src]="member.image" class="card-img-top" alt="..." >
+        <div class="card-body ">
+          <h5 class="card-title">{{member.username}}</h5>
+          <i class="fas fa-star" [ngStyle]="{'color': member.is_verified? 'rgb(30, 231, 30)' : 'red'}"></i>
+          <h5>{{member.email}}</h5>
+          <h5>{{member.phone}}</h5>
+        </div>
+      </div>

@@ -1,0 +1,11 @@
+<app-todosection (sendToParent)="addSection($event)" ></app-todosection>
+@for(taskitem of listtask ; track listtask; let i = $index){
+    <app-tasksection [taskval] = "taskitem"></app-tasksection>
+    <div class="col-auto m-1 p-0 todo-actions">
+        <div class="row d-flex align-items-center ">
+            <button class="" id="del" (click)="deletSection(i)">
+                <i class="fa fa-trash-o text-danger btn m-0 p-0" data-toggle="tooltip" data-placement="bottom" title="Delete todo"></i>
+            </button>
+        </div>
+    </div>
+}
