@@ -13,13 +13,6 @@ export const routes: Routes = [
     {
         path:"homepage",
         component:HomepageComponent,
-        children:[
-            {
-                path:"productdetails/:id",
-                component:ProductdetailsComponent,
-                title:"product"
-            },
-        ]
     },
     {
         path:"login",

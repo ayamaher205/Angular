@@ -3,6 +3,7 @@ import  data from '../../assets/jsonfiles/products-list.json';
 import { ProductcardComponent } from '../productcard/productcard.component';
 import { RouterLink ,Router} from '@angular/router';
 import { ProductdetailsComponent } from '../productdetails/productdetails.component';
+import { Product } from '../interface/product';
 
 @Component({
   selector: 'app-homepage',
@@ -12,7 +13,7 @@ import { ProductdetailsComponent } from '../productdetails/productdetails.compon
   styleUrl: './homepage.component.css'
 })
 export class HomepageComponent {
-products :any = data;
+products:Product[] = data;
 constructor(private router:Router){}
 geturl()
 {
